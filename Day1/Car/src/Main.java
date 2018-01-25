@@ -7,7 +7,7 @@ public class Main {
 //char is only one character. it is not a string.  it can be a symbol, number, or letter
 
     public void printVariables() {
-        System.out.println(maxSpeed);
+        System.out.println("This is the max speed " + maxSpeed);
         System.out.println(minSpeed);
         System.out.println(weight);
         System.out.println(isTheCarOn);
@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code heres
-        Main carry = new Main();
-        carry.printVariables();
+        Main familyCar = new Main();
+        familyCar.printVariables();
     }
 }
