@@ -14,9 +14,20 @@ public class Main {
         System.out.println(condition);
     }
 
+    public void upgradeMinSpeed() {
+        minSpeed = maxSpeed;
+        maxSpeed = maxSpeed + 1;
+    }
+
+    public void wreckCar() {
+        condition = 'C';
+    }
     public static void main(String[] args) {
         // write your code heres
         Main familyCar = new Main();
+        System.out.println("Family Car:");
+        familyCar.printVariables();
+        familyCar.upgradeMinSpeed();
         familyCar.printVariables();
     }
 }
