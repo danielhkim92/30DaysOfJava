@@ -5,6 +5,7 @@ public class Main {
     boolean isTheCarOn = false;
     char condition = 'A';
 //char is only one character. it is not a string.  it can be a symbol, number, or letter
+    String nameOfCar = "Lucy";
 
     public void printVariables() {
         System.out.println("This is the max speed " + maxSpeed);
@@ -12,6 +13,7 @@ public class Main {
         System.out.println(weight);
         System.out.println(isTheCarOn);
         System.out.println(condition);
+        System.out.println(nameOfCar);
     }
 
     public void upgradeMinSpeed() {
