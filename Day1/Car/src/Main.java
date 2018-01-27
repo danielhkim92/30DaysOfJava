@@ -56,6 +56,12 @@ public class Main {
         return maxFuel * mpg;
     }
 
+    public void turnTheCarOn() {
+        if (!isTheCarOn) {
+            isTheCarOn = true;
+        }
+    }
+
 
     public void wreckCar() {
         condition = 'C';
