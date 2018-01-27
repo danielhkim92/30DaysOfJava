@@ -1,11 +1,23 @@
 public class Main {
+
     int maxSpeed = 100;
     int minSpeed = 0;
+
     double weight = 4079;
+
     boolean isTheCarOn = false;
     char condition = 'A';
 //char is only one character. it is not a string.  it can be a symbol, number, or letter
     String nameOfCar = "Lucy";
+
+    double maxFuel = 16;
+    double currentFuel = 8;
+    double mpg = 26.4;
+
+    int numberOfPeopleInCar = 1;
+
+
+
 
     public void printVariables() {
         System.out.println("This is the max speed " + maxSpeed);
