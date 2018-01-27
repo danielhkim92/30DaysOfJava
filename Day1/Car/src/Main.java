@@ -47,16 +47,40 @@ public class Main {
         numberOfPeopleInCar--;
     }
 
+    public double howManyMilesTillOutOfGas() {
+        return currentFuel * mpg;
+    }
+
+    public double maxMilesPerFillUp() {
+        return maxFuel * mpg;
+    }
+
+
     public void wreckCar() {
         condition = 'C';
     }
     public static void main(String[] args) {
         // write your code heres
-        System.out.println("birthday car");
+
         Main birthdayPresentCar = new Main(500, 5000.545, true);
+        System.out.println("birthday car v1");
         birthdayPresentCar.printVariables();
-        System.out.println("christmas car");
-        Main christmasPresentCar = new Main(550, 2014, false);
-        christmasPresentCar.printVariables();
+        birthdayPresentCar.getIn();
+        birthdayPresentCar.getOut();
+        birthdayPresentCar.getOut();
+        birthdayPresentCar.getOut();
+        System.out.println("miles left: " + birthdayPresentCar.howManyMilesTillOutOfGas());
+        System.out.println("max miles: " + birthdayPresentCar.maxMilesPerFillUp());
+        System.out.println("birthday car v2");
+        birthdayPresentCar.printVariables();
+        birthdayPresentCar.getOut();
+        System.out.println("birthday car v2");
+        birthdayPresentCar.printVariables();
+
+
+
+//        System.out.println("christmas car");
+//        Main christmasPresentCar = new Main(550, 2014, false);
+//        christmasPresentCar.printVariables();
     }
 }
