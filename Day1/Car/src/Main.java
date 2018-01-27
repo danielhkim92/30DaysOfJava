@@ -32,6 +32,7 @@ public class Main {
         System.out.println(isTheCarOn);
         System.out.println(condition);
         System.out.println(nameOfCar);
+        System.out.println(numberOfPeopleInCar);
     }
 
     public void upgradeMinSpeed() {
