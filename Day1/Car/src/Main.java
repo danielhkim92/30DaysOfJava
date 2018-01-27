@@ -39,6 +39,14 @@ public class Main {
         maxSpeed = maxSpeed + 1;
     }
 
+    public void getIn() {
+        numberOfPeopleInCar++;
+    }
+
+    public void getOut() {
+        numberOfPeopleInCar--;
+    }
+
     public void wreckCar() {
         condition = 'C';
     }
