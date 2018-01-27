@@ -15,6 +15,7 @@ public class Main {
     double mpg = 26.4;
 
     int numberOfPeopleInCar = 1;
+    int maxNumberOfPeopleInCar = 6;
 
     //this is a good place to make constructors
 
@@ -41,11 +42,18 @@ public class Main {
     }
 
     public void getIn() {
-        numberOfPeopleInCar++;
+        if (numberOfPeopleInCar < maxNumberOfPeopleInCar) {
+            numberOfPeopleInCar++;
+            System.out.println("someone got in");
+        } else {
+            System.out.println("sorry theres no more room for you" + numberOfPeopleInCar " = " + maxNumberOfPeopleInCar);
+        }
     }
 
     public void getOut() {
-        numberOfPeopleInCar--;
+        if (numberOfPeopleInCar >= 0) {
+            numberOfPeopleInCar--;
+        }
     }
 
     public double howManyMilesTillOutOfGas() {
