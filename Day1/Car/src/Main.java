@@ -18,9 +18,10 @@ public class Main {
 
     //this is a good place to make constructors
 
-    public Main(int customMinSpeed) {
-        minSpeed = customMinSpeed;
-
+    public Main(int customMaxSpeed, double customWeight, boolean customIsTheCarOn) {
+        maxSpeed = customMaxSpeed;
+        weight = customWeight;
+        isTheCarOn = customIsTheCarOn;
     }
 
 
@@ -43,6 +44,7 @@ public class Main {
     }
     public static void main(String[] args) {
         // write your code heres
-        Main birthdayPresentCar = new Main(10);
+        Main birthdayPresentCar = new Main(500, 5000.545, true);
+        birthdayPresentCar.printVariables();
     }
 }
