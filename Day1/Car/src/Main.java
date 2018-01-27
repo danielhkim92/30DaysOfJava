@@ -16,7 +16,12 @@ public class Main {
 
     int numberOfPeopleInCar = 1;
 
+    //this is a good place to make constructors
 
+    public Main(int customMinSpeed) {
+        minSpeed = customMinSpeed;
+
+    }
 
 
     public void printVariables() {
@@ -38,10 +43,6 @@ public class Main {
     }
     public static void main(String[] args) {
         // write your code heres
-        Main familyCar = new Main();
-        System.out.println("Family Car:");
-        familyCar.printVariables();
-        familyCar.upgradeMinSpeed();
-        familyCar.printVariables();
+        Main birthdayPresentCar = new Main(10);
     }
 }
