@@ -19,11 +19,11 @@ public class Main {
 
     //this is a good place to make constructors
 
-    public Main(int customMaxSpeed, double customWeight, boolean customIsTheCarOn) {
-        maxSpeed = customMaxSpeed;
-        weight = customWeight;
-        isTheCarOn = customIsTheCarOn;
-    }
+//    public Main(int customMaxSpeed, double customWeight, boolean customIsTheCarOn) {
+//        maxSpeed = customMaxSpeed;
+//        weight = customWeight;
+//        isTheCarOn = customIsTheCarOn;
+//    }
 
 
     public void printVariables() {
@@ -46,13 +46,15 @@ public class Main {
             numberOfPeopleInCar++;
             System.out.println("someone got in");
         } else {
-            System.out.println("sorry theres no more room for you" + numberOfPeopleInCar " = " + maxNumberOfPeopleInCar);
+            System.out.println("sorry theres no more room for you" + numberOfPeopleInCar + " = " + maxNumberOfPeopleInCar);
         }
     }
 
     public void getOut() {
         if (numberOfPeopleInCar >= 0) {
             numberOfPeopleInCar--;
+        } else {
+            System.out.println("theres no one in the car");
         }
     }
 
@@ -67,6 +69,8 @@ public class Main {
     public void turnTheCarOn() {
         if (!isTheCarOn) {
             isTheCarOn = true;
+        } else {
+            System.out.println("the car is already on silly");
         }
     }
 
@@ -77,20 +81,20 @@ public class Main {
     public static void main(String[] args) {
         // write your code heres
 
-        Main birthdayPresentCar = new Main(500, 5000.545, true);
-        System.out.println("birthday car v1");
-        birthdayPresentCar.printVariables();
-        birthdayPresentCar.getIn();
-        birthdayPresentCar.getOut();
-        birthdayPresentCar.getOut();
-        birthdayPresentCar.getOut();
-        System.out.println("miles left: " + birthdayPresentCar.howManyMilesTillOutOfGas());
-        System.out.println("max miles: " + birthdayPresentCar.maxMilesPerFillUp());
-        System.out.println("birthday car v2");
-        birthdayPresentCar.printVariables();
-        birthdayPresentCar.getOut();
-        System.out.println("birthday car v2");
-        birthdayPresentCar.printVariables();
+        Main tommyCar = new Main();
+        tommyCar.getOut();
+        tommyCar.getOut();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.turnTheCarOn();
+        tommyCar.turnTheCarOn();
+
 
 
 
