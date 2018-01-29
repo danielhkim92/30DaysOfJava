@@ -19,11 +19,18 @@ public class Main {
 
     //this is a good place to make constructors
 
-//    public Main(int customMaxSpeed, double customWeight, boolean customIsTheCarOn) {
-//        maxSpeed = customMaxSpeed;
-//        weight = customWeight;
-//        isTheCarOn = customIsTheCarOn;
-//    }
+    public Main(int customMaxSpeed, double customWeight, boolean customIsTheCarOn) {
+        maxSpeed = customMaxSpeed;
+        weight = customWeight;
+        isTheCarOn = customIsTheCarOn;
+    }
+
+
+    //getters and setters
+    
+    public int getMaxSpeed() {
+        return this.maxSpeed;
+    }
 
 
     public void printVariables() {
@@ -94,7 +101,6 @@ public class Main {
         tommyCar.getIn();
         tommyCar.turnTheCarOn();
         tommyCar.turnTheCarOn();
-
 
 
 
