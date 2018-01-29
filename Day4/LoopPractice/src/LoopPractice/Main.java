@@ -19,12 +19,20 @@ public class Main {
         } while (x < 10);
     }
 
+    public static void practiceForLoop() {
+        for (int x = 0; x < 20; x++) {
+            System.out.println("The value of x is " + x);
+        }
+        System.out.println("This is the end");
+    }
+
     public static void main(String[] args) {
 	// write your code here
 //        practiceWhileLoop();
-        practiceDoWhileLoop();
+//        practiceDoWhileLoop();
+        practiceForLoop();
     }
 }
 
-
+//scope is basically the range of when the function can actually work.  if it cant be accessed, then obviously it wont work
 ///static is not instance
