@@ -25,11 +25,32 @@ public class Main {
         isTheCarOn = customIsTheCarOn;
     }
 
+    public Main () {
+
+    }
+
 
     //getters and setters
-    
+    //purpose of setters and getters helps promote cleaner code!
+
     public int getMaxSpeed() {
         return this.maxSpeed;
+    }
+
+    public void setMaxSpeed() {
+        this.maxSpeed = 
+    }
+
+    public int getMinSpeed(){
+        return this.minSpeed;
+    }
+
+    public double getWeight() {
+        return this.weight;
+    }
+
+    public boolean getIsTheCarOn() {
+        return this.isTheCarOn
     }
 
 
