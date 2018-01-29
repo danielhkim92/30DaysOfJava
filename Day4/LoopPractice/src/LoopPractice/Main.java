@@ -10,9 +10,19 @@ public class Main {
             x++;
         }
     }
+
+    public static void practiceDoWhileLoop() {
+        int x = 0;
+        do {
+            System.out.print("The value of x is " + x);
+            x++;
+        } while (x < 10);
+    }
+
     public static void main(String[] args) {
 	// write your code here
-        practiceWhileLoop();
+//        practiceWhileLoop();
+        practiceDoWhileLoop();
     }
 }
 
