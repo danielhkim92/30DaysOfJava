@@ -13,5 +13,10 @@ public class Main {
     }
     public static void main(String[] args) {
 	// write your code here
+        howBigIsMyNumber(0);
+        howBigIsMyNumber(5);
+        howBigIsMyNumber(65);
+        howBigIsMyNumber(104);
+        howBigIsMyNumber(-1);
     }
 }
