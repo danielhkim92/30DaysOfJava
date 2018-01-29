@@ -20,10 +20,10 @@ public class Main {
     }
 
     public static void practiceForLoop() {
-        for (int x = 10; x < 20; x--) {
-            System.out.println("The value of x is " + x);
-//            if(x === 10) {
-//                break;
+        for (int x = 0; x < 10; x++) {
+            for (int y = 0; y < 10; y++) {
+                System.out.println("("+x+", "+y+")");
+
             }
         }
         System.out.println("This is the end");
