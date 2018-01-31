@@ -89,9 +89,30 @@ public class MadLibs {
     public void setRandomNums() {
 
     }
+// Print instructions to the player
+
 
     public void printInstructions() {
         System.out.println("Welcome to the Madlibs game. If you type in " + "words, we'll give you a story.  Start by typing in a name.");
+    }
+
+    public void enterName() {
+        setName(scanner.nextLine());
+    }
+
+    public void enterNoun1() {
+        setNoun1(scanner.nextLine());
+    }
+
+    public void enterNoun2() {
+        setNoun2(scanner.nextLine());
+    }
+
+    public void enterNoun3() {
+        setNoun3(scanner.nextLine());
+    }
+    public void enterAdverb() {
+        setAdverb(scanner.nextLine());
     }
 
     public void putTogetherTheStory() {
