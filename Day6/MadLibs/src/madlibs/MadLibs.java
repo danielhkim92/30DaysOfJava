@@ -64,36 +64,41 @@ public class MadLibs {
     }
 
     public void setAdjective1(String newAdj1) {
-        this.adjective1 = newAdj1
+        this.adjective1 = newAdj1;
     }
 
     public void setAdjective2(String newAdj2) {
-        this.adjective2 = newAdj2
+        this.adjective2 = newAdj2;
     }
 
     public void setNoun1(String newNoun1) {
-        this.noun1 = newNoun1
+        this.noun1 = newNoun1;
     }
 
     public void setNoun2(String newNoun2) {
-        this.noun2 = newNoun2
+        this.noun2 = newNoun2;
     }
     public void setNoun3(String newNoun3) {
-        this.noun3 = newNoun3
+        this.noun3 = newNoun3;
     }
 
     public void setAdverb(String newAdverb) {
-        this.adverb = newAdverb
+        this.adverb = newAdverb;
     }
 
     public void setRandomNums() {
-        
+
     }
 
+    public void printInstructions() {
+        System.out.println("Welcome to the Madlibs game. If you type in " + "words, we'll give you a story.  Start by typing in a name");
+    }
 
 
 
     public static void main(String[] args) {
+        MadLibs game = new MadLibs();
+        game.printInstructions();
 	// write your code here
     }
 }
