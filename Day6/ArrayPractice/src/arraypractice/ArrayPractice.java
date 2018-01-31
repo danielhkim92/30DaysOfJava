@@ -24,10 +24,11 @@ public class ArrayPractice {
         int[] intArray1;
         ////allocating
         int[] intArray2 = new int[4];
+        printArray(intArray2);
         ////initializing
         int[] intArray3 = {5, 2, 9, 1 , 3};
         ////S
-        String[] stringArray1 =  {"bananas", "apples", "pears"};
+        String[] shoppingList =  {"bananas", "apples", "pears"};
 
         intArray2[0] = 10;
         intArray2[1] = 8;
@@ -40,5 +41,18 @@ public class ArrayPractice {
         ///custom print out arrays
         printArray(intArray2);
         printArray(intArray3);
+
+        ///retrieve objects
+        System.out.println(intArray2[3]);
+
+        ///given functions
+        Arrays.sort(intArray3);
+        printArray(intArray3);
+
+        System.out.println("special for loop for shopping list");
+        ///special for loop; for each
+        for (String s : shoppingList) {
+            System.out.println(s);
+        }
     }
 }
