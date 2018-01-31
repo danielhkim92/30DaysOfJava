@@ -163,6 +163,9 @@ public class MadLibs {
         enterNoun2();
         enterAdverb();
         enterNoun3();
+        setRandomNums();
+        putTogetherTheStory();
+        System.out.println(getStory());
 
     }
 
@@ -170,6 +173,7 @@ public class MadLibs {
     public static void main(String[] args) {
         MadLibs game = new MadLibs();
         game.printInstructions();
+        game.play();
 	// write your code here
     }
 }
