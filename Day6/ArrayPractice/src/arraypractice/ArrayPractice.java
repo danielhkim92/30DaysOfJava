@@ -44,8 +44,9 @@ public class ArrayPractice {
 
         ///retrieve objects
         System.out.println(intArray2[3]);
+        System.out.println(Array.get(intArray2, 3));
 
-        ///given functions
+        /* /given functions */
         Arrays.sort(intArray3);
         printArray(intArray3);
 
